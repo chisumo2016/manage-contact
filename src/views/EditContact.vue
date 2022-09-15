@@ -13,25 +13,25 @@
         <div class="col-md-4">
           <form @submit.prevent="updateContact()">
             <div class="mb-2">
-              <input  v-model="contact.name" type="text" class="form-control" placeholder="Enter Your Name">
+              <input  v-model="contact.name" type="text" class="form-control" placeholder="Enter Your Name" required>
             </div>
             <div class="mb-2">
-              <input  v-model="contact.photo" type="text" class="form-control" placeholder="Enter Photo URL">
+              <input  v-model="contact.photo" type="text" class="form-control" placeholder="Enter Photo URL" required>
             </div>
             <div class="mb-2">
-              <input v-model="contact.email" type="email" class="form-control" placeholder="Enter Your Email">
+              <input v-model="contact.email" type="email" class="form-control" placeholder="Enter Your Email" required>
             </div>
             <div class="mb-2">
-              <input  v-model="contact.mobile" type="number" class="form-control" placeholder="Enter Your Mobile">
+              <input  v-model="contact.mobile" type="number" class="form-control" placeholder="Enter Your Mobile" required>
             </div>
             <div class="mb-2">
-              <input v-model="contact.company" type="text" class="form-control" placeholder="Enter Your Company">
+              <input v-model="contact.company" type="text" class="form-control" placeholder="Enter Your Company" required>
             </div>
             <div class="mb-2">
-              <input v-model="contact.title" type="text" class="form-control" placeholder="Enter Your Title">
+              <input v-model="contact.title" type="text" class="form-control" placeholder="Enter Your Title" required>
             </div>
             <div class="mb-2">
-              <select  v-model="contact.groupId" v-if="groups.length > 0" name="" id="" class="form-control">
+              <select  v-model="contact.groupId" v-if="groups.length > 0" name="" id="" class="form-control" required>
                 <option value="">Select Group</option>
                 <option :value="group.id" v-for="group of groups" :key="group.id">{{group.name}}</option>
               </select>
