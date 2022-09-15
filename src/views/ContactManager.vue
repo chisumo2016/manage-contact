@@ -66,7 +66,7 @@
               <div class="col-sm-1 d-flex flex-column justify-content-center align-items-center">
                  <router-link :to="`/contacts/show/${contact.id}`" class="btn btn-warning my-1"><i class="fa fa-eye"></i></router-link>
                  <router-link :to="`/contacts/edit/${contact.id}`" class="btn btn-primary my-1"><i class="fa fa-pen"></i></router-link>
-                 <button class="btn btn-danger my-1"><i class="fa fa-trash"></i></button>
+                 <button class="btn btn-danger my-1" @click="DeleteContactRecord(contact.id)"><i class="fa fa-trash"></i></button>
               </div>
             </div>
           </div>
@@ -107,7 +107,21 @@ export default {
     }
   },
   methods : {
-
+    async DeleteContactRecord(contactId){
+      try {
+        this.loading = true;
+        let response = await  ContactService.deleteContact(contactId); //BE
+        if (response){
+          let response = await  ContactService.getAllContacts(); //getting fresh data
+          //let response = await  this.getAllContactsData();
+          this.contacts = response.data;
+          this.loading = false;
+        }
+      }catch (e) {
+        this.errorMessage = e;
+        this.loading = false
+      }
+    }
 
   }
 }
