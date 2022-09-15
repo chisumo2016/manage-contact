@@ -6,6 +6,7 @@
         <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deserunt ea eligendi et, eum excepturi, facere in libero mollitia nisi omnis quae qui quidem quos reiciendis rem repellendus unde velit.</p>
       </div>
     </div>
+  </div>
   <!-- End of Container  -->
     <div class="container mt-3">
        <div class="row">
@@ -44,7 +45,7 @@
          </div>
        </div>
     </div>
-  </div>
+
 </template>
 
 <script>
