@@ -37,9 +37,11 @@
               <div class="mb-2">
                 <input type="text" class="btn btn-success" value="Create">
               </div>
-
             </form>
           </div>
+         <div class="col-md-4">
+           <img src="https://www.kindpng.com/picc/m/269-2697881_computer-icons-user-clip-art-transparent-png-icon.png" alt="" class="contact-img">
+         </div>
        </div>
     </div>
   </div>
