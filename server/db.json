@@ -39,6 +39,16 @@
       "title": "Software Engineer",
       "groupId": "1",
       "id": "kLt-bJF"
+    },
+    {
+      "name": "Testee Test",
+      "company": "Agumba",
+      "email": "test@test.com",
+      "title": "Tech Lead",
+      "mobile": 3456788899999,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/7/70/User_icon_BLACK-01.png",
+      "groupId": "1",
+      "id": "iEpgWWR"
     }
   ],
   "groups": [
@@ -68,4 +78,3 @@
     }
   ]
 }
-
