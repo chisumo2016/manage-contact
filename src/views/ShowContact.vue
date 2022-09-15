@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Vue Contact</h2>
+    <h2>Show Contact</h2>
   </div>
 </template>
 
